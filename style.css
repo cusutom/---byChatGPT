@@ -1,0 +1,65 @@
+body {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 2px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cell .disc {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  
+  .white {
+    background-color: white;
+  }
+
+  #controls {
+    margin: 10px;
+  }
+  
+  #controls button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
+  #scoreBoard {
+    font-weight: bold;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* ← 黒と白の間をもっと離す */
+  }
+
+  #scoreBoard span {
+    min-width: 40px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+
